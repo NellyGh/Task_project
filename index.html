@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Gulp project</title>
+    <link rel="stylesheet" href="build/css/style.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="img"></div>
+                <div id="myLinks">
+                    <a class="menu-item"href="#À la carte">À la carte</a>
+                    <a class="menu-item"href="#cWijnkaart">Wijnkaart</a>
+                    <a class="menu-item" href="#Lunchmenu">Lunchmenu</a>
+                    <a class="menu-item" href="#Contact">Contact</a>
+                    <a class="menu-item">
+                        <i class="fa fa-phone"></i>  &nbsp;
+                        +32 9 282 57 25
+                      </a>
+                  </div> 
+                  <a class="icon"  onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </nav>
+            <div class="burger">
+                <a class="burger-item"href="#À la carte">À la carte</a>
+                <a class="burger-item"href="#cWijnkaart">Wijnkaart</a>
+                <a class="burger-item" href="#Lunchmenu">Lunchmenu</a>
+                <a class="burger-item" href="#Contact">Contact</a>
+                <a class="burger-item">
+                    <i class="fa fa-phone"></i>  &nbsp;
+                    +32 9 282 57 25
+                  </a>
+              </div>  
+        </header>
+        <h4 class="heading"> OPEN EVERYDAY 6AM - 9PM </h4>
+        <p class="text">
+            A bad day with lunch is better than <br/> a good day without it.
+        </p>
+        <div class="row">
+            <button class="reserve" data-modal>Reserve a table</button>
+            <div class="cirlces">
+                <div class="circle"><span>Fb</span></div>
+                <div class="circle"><span>Ig</span></div>
+                <div class="circle"><span>Wt</span></div>
+                <div class="circle"><span>Vt</span></div>
+            </div>
+        </div>
+        <div class="background-container"></div>
+    </div>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form   class="form-action"action="#">
+                    <div class="modal__close" data-close>&times;</div>
+                    <div class="modal__title">have any questions?</div>
+                    <input required placeholder="Input Your Name" name="name" type="text" class="modal__input name">
+                    <input required placeholder="Input Your Email" name="email" type="email" class="modal__input email">
+                    <input required placeholder="Input Your Special Request" name="text" type="text" class="modal__input request">
+                    <button class="btn" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./script-burger.js"></script>
+    <script  type="module" src="./script-slider.js"></script>
+    <script src="./modal.js"></script>
+</body>
+</html>

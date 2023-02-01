@@ -1,0 +1,94 @@
+
+
+.container{
+   max-width:1350px
+}
+
+
+header {
+    nav {
+        max-width:1350px;
+        display:flex;
+        align-items: center;
+        gap:70px;
+        @include respond-to('xs') {
+            width:450px;
+            position:relative;
+            overflow: hidden;
+            justify-content: space-between;
+        };
+        .img {
+            background-image:url("../../../src/images/pic-1.png");
+            background-repeat:no-repeat;
+            background-size:contain;
+            margin-left:30px;
+            margin-top:15px;
+            width:150px;
+            height:50px;
+        }
+
+        .icon {
+            display:none;
+            color:black;
+            text-decoration: none;
+            @include respond-to('xs') {
+                width:450px;
+                display:block;
+                padding: 30px 50px;
+                flex-basis: 20%;
+              
+            };
+        }
+        #myLinks {
+            .menu-item {
+                padding:37px 50px;
+                color:black;
+                text-decoration: none;
+                font-size: 17px;
+                transition: 1.5s, easy-in-out;
+                @include respond-to('xs') {
+                    width:450px;
+                    display:none;
+                    
+                };
+                &:hover {
+                    background-color:black;
+                    color: white
+                }
+            }
+             
+        }
+       .fa-phone {
+           color: #D3B47F
+       } 
+            
+    }
+
+    .burger {
+        display:none;
+        @include respond-to('xs') {
+            width:450px;
+            display:none;
+            
+        };
+        .burger-item {
+            padding:20px 35px;
+            color:black;
+            text-decoration: none;
+            font-size: 17px;
+            display:block;
+            text-align:start;
+            transition: 1.5s, easy-in-out;
+            &:hover {
+                background-color:black;
+                color: white
+            }
+        }
+        
+    }
+}
+
+
+
+
+

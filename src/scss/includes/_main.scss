@@ -1,0 +1,79 @@
+.heading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin:10px 30px;
+    @include respond-to('xs') {
+        font-size: 13px;
+    };
+}
+
+
+ .text {
+    margin:30px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 88px;
+    @include respond-to('xs') {
+        font-size:25px;
+        line-height: 30px;
+        margin: 10px 30px;
+    };
+}
+
+.row {
+    display:flex;
+    gap:617px;
+    align-items:center;
+    @include respond-to('xs') {
+        gap:73px;
+    };
+    .reserve {
+        background-color: #3A4574;
+        border:1px solid transparent;
+         width: 270px;
+         height: 100px;
+         margin:30px;
+         cursor:pointer;
+         @include respond-to('xs') {
+             width:100px;
+             height: 50px;
+             margin:18px 30px;
+         };
+         transition: 1.5s, easy-in-out;
+         &:hover {
+            background-color:black;
+            color: white
+        }
+     }
+
+ .circle {
+    height: 30px;
+    width: 30px;
+    margin-left:10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    position:relative;
+    span {
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    }
+}
+
+.background-container {
+    background-image:url('../../../src/images/img-2.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    width:100%;
+    @include respond-to('xs') {
+        width:450px
+      
+    };
+    height:800px
+    
+}
