@@ -67,9 +67,9 @@
 
 .background-container {
     width:100%;
+    object-fit: contain;
     @include respond-to('xs') {
         width:450px;
-        object-fit: contain;
         height:300px;
       
     };
