@@ -77,5 +77,6 @@ sendBtn.addEventListener("submit", event =>{
    });
 
    sendBtn.reset()
+   setBtn.submit()
 
 });

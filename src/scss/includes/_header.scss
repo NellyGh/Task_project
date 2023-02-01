@@ -18,11 +18,9 @@ header {
             justify-content: space-between;
         };
         .img {
-            background-image:url("../../../src/images/pic-1.png");
-            background-repeat:no-repeat;
-            background-size:contain;
+            object-fit: contain;
             margin-left:30px;
-            margin-top:15px;
+            margin-top:4px;
             width:150px;
             height:50px;
         }
@@ -41,7 +39,7 @@ header {
         }
         #myLinks {
             .menu-item {
-                padding:37px 50px;
+                padding:19px 50px;
                 color:black;
                 text-decoration: none;
                 font-size: 17px;
